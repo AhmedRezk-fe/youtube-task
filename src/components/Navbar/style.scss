@@ -1,0 +1,64 @@
+.navbar {
+    position: fixed;
+    width: 100%;
+    top: 0px;
+    left: 0px;
+    overflow: hidden;
+    padding: 15px;
+    background: #fbfbfb;
+    min-height: 40px;
+    z-index: 1;
+
+    .container {
+        display: flex;
+        justify-content: space-between;
+        max-width: 70%;
+        margin: auto;
+        align-items: center;
+        
+    }
+    .logo {
+        width: 150px;
+        img {
+            width: 100%;
+        }
+    }
+
+}
+
+.searchbar {
+    max-width: 100%;
+    min-width: 80%;
+    form {
+        display: flex;
+        justify-content: center;
+    }
+    &_input {
+        width: 55%;
+    }
+    &_button {
+        width: 60px;
+    }
+    
+}
+
+
+body{
+    padding-top: 90px;
+    background:#eae9e9;
+}
+
+@media (max-width: 575.98px) { 
+    body{
+        padding-top: 0px;
+    }
+    .navbar {
+        position: static;
+        .container {
+
+            max-width: 100%;
+
+        }
+    }
+
+}
